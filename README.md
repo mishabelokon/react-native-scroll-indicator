@@ -4,19 +4,17 @@
 
 ## Usage
 1. Install the repository
-    ```bash
-    $ npm i react-native-scroll-indicator
-    ```
-or     
-    ```bash
-    $ yarn add react-native-scroll-indicator
-    ```
+    `npm i react-native-scroll-indicator`
+    or
+    `yarn add react-native-scroll-indicator`
+
+
 2. Add an import to the top of your file
-    ```js
+    ```javascript
     import ScrollViewIndicator from 'react-native-scroll-indicator';
     ```
 3. Use it just as normal ScrollView but with some custom props.
-    ```js
+    ```javascript
     <ScrollViewIndicator>
         <Content />
     </ScrollViewIndicator>
