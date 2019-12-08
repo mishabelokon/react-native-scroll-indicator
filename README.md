@@ -3,7 +3,7 @@
 > It's a simple react-native component made to help you to create your awesome custom scroll indicators. It's support only ScrollView for now. But in the next version it should support FlatList.
 
 ## Usage
-1. Install the package
+1. Install the package <br />
     `npm i react-native-scroll-indicator`<br />
     or<br />
     `yarn add react-native-scroll-indicator`<br />
