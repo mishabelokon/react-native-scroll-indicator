@@ -3,10 +3,10 @@
 > It's a simple react-native component made to help you to create your awesome custom scroll indicators. It's support only ScrollView for now. But in the next version it should support FlatList.
 
 ## Usage
-1. Install the repository
-    `npm i react-native-scroll-indicator`
-    or
-    `yarn add react-native-scroll-indicator`
+1. Install the package
+    `npm i react-native-scroll-indicator`<br />
+    or<br />
+    `yarn add react-native-scroll-indicator`<br />
 
 
 2. Add an import to the top of your file
@@ -32,3 +32,4 @@
 | scrollViewStyle     | style            | Style of ScrollView component | {} |
 | scrollIndicatorContainerStyle     | style            | Style of scroll indicator container | {} |
 | scrollIndicatorStyle     | style            | Style on scroll indicator | {} |
+| ...ScrollViewProps     | ScrollViewProps            | All other props will be passed to ScrollView | {} |
