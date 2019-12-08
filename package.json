@@ -1,0 +1,43 @@
+{
+  "name": "react-native-scroll-indicator",
+  "version": "0.1.0",
+  "private": false,
+  "description": "This package will help you to create your awesome custom scroll indicator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "scroll view",
+    "scrollindicator",
+    "scroll indicator",
+    "indicator"
+  ],
+  "peerDependency": {
+    "react": "*",
+    "react-native": "0.50.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/runtime": "^7.7.4",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.7.2",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react-test-renderer": "16.9.0"
+  },
+  "author": "Misha Belokon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishabelokon/react-native-scroll-indicator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mishabelokon/react-native-scroll-indicator/issues"
+  },
+  "homepage": "https://github.com/mishabelokon/react-native-scroll-indicator#readme"
+}
