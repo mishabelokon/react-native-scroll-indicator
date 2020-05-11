@@ -14,6 +14,7 @@ export default ({
     scrollIndicatorStyle = {},
     ...props
 }) => {
+    const { onScroll, ...propsToSpread } = props;
     const [fadeAnim] = useState(
         new Animated.Value(shouldIndicatorHide ? 0 : 1),
     );
@@ -32,7 +33,14 @@ export default ({
         setScrollIndicatorContainerHeight,
     ] = useState(1);
 
-    const handleScroll = ({ contentOffset }) => {
+    const handleScroll = (value) => {
+        const {nativeEvent: { contentOffset }} = value;
+        /**
+         * Propagating onScroll event upwards in case onScroll prop is provided 
+         */
+        if (onScroll && typeof onScroll === 'function') {
+            onScroll(value);
+        }
         //Calculation scroll indicator position based on child height and scrollView view height)
         const movePercent =
             contentOffset.y /
@@ -91,12 +99,12 @@ export default ({
                 onLayout={e =>
                     setVisibleScrollPartHeight(e.nativeEvent.layout.height)
                 }
-                onScroll={({ nativeEvent }) => handleScroll(nativeEvent)}
+                onScroll={handleScroll}
                 scrollEventThrottle={16}
                 onMomentumScrollEnd={() => runHideTimer()}
                 onScrollBeginDrag={() => showIndicator()}
                 showsVerticalScrollIndicator={false}
-                {...props}
+                {...propsToSpread}
             >
                 {children}
             </ScrollView>
