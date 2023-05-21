@@ -33,3 +33,7 @@
 | scrollIndicatorContainerStyle     | style            | Style of scroll indicator container | {} |
 | scrollIndicatorStyle     | style            | Style on scroll indicator | {} |
 | ...ScrollViewProps     | ScrollViewProps            | All other props will be passed to ScrollView | {} |
+
+## Contributing
+
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
