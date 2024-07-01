@@ -27,6 +27,7 @@
 | flexibleIndicator               | bool             | Set to `false` if you want to set your indicator a fixed height | true      |
 | indicatorHeight              | num               | Height of indicator. Use with `flexibleIndicator`                                                                                                                                                                       | 200       |
 | shouldIndicatorHide               | bool   | Set to `true` if you want to hide Indicator when scroll is idle | true
+| useNativeDriver               | bool   | this argument is required to the new versions the react native | true
 | hideTimeout | num | Time of show/hide indicator animation in `ms`   | 500    |
 | style     | style            | Style of container | {} |
 | scrollViewStyle     | style            | Style of ScrollView component | {} |

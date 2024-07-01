@@ -8,6 +8,7 @@ export default ({
     flexibleIndicator = true,
     shouldIndicatorHide = true,
     hideTimeout = 500,
+    useNativeDriver = true, 
     style = {},
     scrollViewStyle = {},
     scrollIndicatorContainerStyle = {},
@@ -61,10 +62,13 @@ export default ({
                 ? Animated.timing(fadeAnim, {
                       toValue: 0,
                       duration: hideTimeout,
+                      useNativeDriver: useNativeDriver
                   }).start()
                 : Animated.timing(fadeAnim, {
                       toValue: 1,
                       duration: hideTimeout,
+                      useNativeDriver: useNativeDriver
+
                   }).start();
         }
     }, [fadeAnim, hideTimeout, isIndicatorHidden, shouldIndicatorHide]);
